@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Forja PC · Armado de computadoras gamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Barlow:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">Forja<b>PC</b></div>
+            <nav aria-label="Menú principal">
+                <ul class="menu">
+                    <li class="has-sub"><button class="top" type="button" aria-expanded="false"
+                            onclick="despliega(this)">Armar mi PC ▾</button>
+                        <ul class="sub">
+                            <li><a href="#g-cpu">Procesador</a></li>
+                            <li><a href="#g-gpu">Tarjeta gráfica</a></li>
+                            <li><a href="#g-ram">Memoria RAM</a></li>
+                            <li><a href="#g-ssd">Almacenamiento</a></li>
+                            <li><a href="#g-cas">Gabinete</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"><button class="top" type="button" aria-expanded="false"
+                            onclick="despliega(this)">PCs listas ▾</button>
+                        <ul class="sub">
+                            <li><a href="#armar" data-p="Entrada">Entrada</a></li>
+                            <li><a href="#armar" data-p="Competitivo">Competitivo</a></li>
+                            <li><a href="#armar" data-p="Extremo">Extremo</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="top" href="#proceso">Cómo trabajamos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <div class="hero-txt">
+                <h1>Armamos la computadora gamer que <span class="hl">tu juego</span> necesita.</h1>
+                <p>Elige las piezas, personaliza tu PC y nosotros la ensamblamos con calidad y garantía. Rendimiento,
+                    potencia y estilo en un solo lugar.</p>
+                <div class="presets" role="group" aria-label="Configuraciones rápidas"></div>
+            </div>
+            <div class="hero-img"><img src="gamer.png"
+                    alt="Torre gamer con ventiladores RGB y tarjeta GeForce RTX" width="1000" height="667"></div>
+        </div>
+
+        <div class="cfg" id="armar">
+            <div id="groups"></div>
+            <aside class="sum" aria-live="polite">
+                <h2>Tu configuración</h2>
+                <ul id="list"></ul>
+                <div class="psu" id="psu"></div>
+                <div class="fps" id="fps"></div>
+                <div class="total" id="total"></div>
+                <p class="note">Precios referenciales en bolivianos (Bs). Incluye ensamblaje, fuente de poder, pasta
+                    térmica y 24 h de pruebas.</p>
+                <a class="btn" id="wa" href="#" target="_blank" rel="noopener">Pedir esta PC por WhatsApp</a>
+            </aside>
+        </div>
+
+        <section class="blk" id="listas">
+            <h2>PCs listas para llevar</h2>
+            <div class="cards" id="cards"></div>
+        </section>
+
+        <section class="blk" id="proceso">
+            <h2>Cómo trabajamos</h2>
+            <ol class="steps">
+                <li><b>Eliges</b><span>Armas tu PC aquí o partes de una configuración lista.</span></li>
+                <li><b>Confirmamos</b><span>Te escribimos para validar piezas, precio y disponibilidad.</span></li>
+                <li><b>Ensamblamos y probamos</b><span>24 horas de estrés para verificar temperaturas y
+                        estabilidad.</span></li>
+                <li><b>Entregamos</b><span>Sistema instalado, drivers al día y garantía por escrito.</span></li>
+            </ol>
+        </section>
+
+        <footer>Forja PC · Venta y armado de computadoras gamer</footer>
+    </div>
+
+    <script src="pro.js"></script>
+</body>
+
+</html>
